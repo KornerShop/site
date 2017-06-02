@@ -1,44 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>KornerShop</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-
+<head>
+    <title>KornerShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <link rel="stylesheet" href="assets/css/onepage-scroll.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/jquery.onepage-scroll.js"></script>
+</head>
 <body>
-    <div>
-        <header class="bg-pink sans-serif vh-100">
-            <nav class="dt w-100 border-box ph4-ns">
-                <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
-                    <img src="assets/img/logo45.svg" class="dib w4 h4 br-100" alt="Site Name">
-                </a>
-                <div class="dtc v-mid w-75 tr tracked black-80">
-                    <a class="link dim black-80 f6 f5-ns dib mr3 mr4-ns" href="mailto:hello@kornershop.io" title="About">hello@kornershop.io</a>
+    <div class='main'>
+        <section class='page1'>
+            <header class="bg-pink sans-serif vh-100">
+                <nav class="dt w-100 border-box ph4-ns">
+                    <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
+                        <img src="assets/img/logo45.svg" class="dib w4 h4 br-100" alt="Site Name">
+                    </a>
+                    <div class="dtc v-mid w-75 tr tracked black-80">
+                        <a class="link dim black-80 f6 f5-ns dib mr3 mr4-ns" href="mailto:hello@kornershop.io" title="About">hello@kornershop.io</a>
+                    </div>
+                </nav>
+                <div class="mw9 center pa4 pt5-ns ph7-l">
+                    <h4 class="f6 ttu tracked black-80">
+                                <small>
+                                    Welcome to the
+                                </small>
+                            </h4>
+                    <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+                            <span class="bg-black-90 white lh-copy white pa1 tracked-tight">
+                              KornerShop
+                            </span>
+                            </h3>
+                    <h4 class="f3 fw1 georgia i">Fullstack JavaScript Development.</h4>
+                    <h5 class="f6 ttu tracked black-80">Oakland, CA</h5>
                 </div>
-            </nav>
-            <div class="mw9 center pa4 pt5-ns ph7-l">
-                <h4 class="f6 ttu tracked black-80"><small>Welcome to the</small></h4>
-                <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-                <span class="bg-black-90 white lh-copy white pa1 tracked-tight">
-                  KornerShop
-                </span>
-                </h3>
-                <h4 class="f3 fw1 georgia i">Fullstack JavaScript Development.</h4>
-                <h5 class="f6 ttu tracked black-80">Oakland, CA</h5>
+            </header>
+        </section>
+        <section class='page2'>
+            <div class="bg-black avenir vh-100">
+                <div class="pa3 tc ph4">
+                    <h1 class="i f3 f2-m f1-l fw6 pink mv0 pt3">
+                            Meet the team
+                        </h1>
+                </div>
+                <div class="mw7 center avenir">
+                    <article class="bt bb b--white-10">
+                        <a class="db pv4 ph0-l no-underline white dim" href="#0">
+                            <div class="flex flex-column flex-row-ns">
+                                <div class="pr3-ns mb4 mb0-ns w-80 w-40-ns">
+                                    <img src="assets/img/kellan.jpg" class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
+                                </div>
+                                <div class="w-100 w-75-ns pl3-ns">
+                                    <h1 class="f3 tc fw3 mt0 lh-title pink">
+                                            Kellan
+                                        </h1>
+                                    <p class="f6 tc f5-l lh-copy">
+                                        The tech giant says it is ready to begin planning a quantum computer, a powerful cpu machine that relies on subatomic particles instead of transistors.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="bb b--black-10 mt2">
+                        <a class="db ph0-l no-underline white dim" href="#0">
+                            <div class="flex flex-column flex-row-ns">
+                                <div class="order-1 pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                                    <img src="assets/img/noel.jpg" class="db" alt="Photo of a warehouse with stacked shelves.">
+                                </div>
+                                <div class="w-100 w-80-ns pl3-ns">
+                                    <h1 class="f3 tc fw3 mt0 lh-title pink">
+                                            Noel
+                                        </h1>
+                                    <p class="f6 tc f5-l tl lh-copy">
+                                        A warehouse is a commercial building for storage of goods. Warehouses are used by manufacturers, importers, exporters, wholesalers, transport
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </div>
-        </header>
+        </section>
+        <section class='page3'>
+            <div class='vh-100 bg-pink'>
+                <h1 class='ma0'>
+                    our projects
+                </h1>
+            </div>
+        </section>
     </div>
-    <div class="bg-washed-blue sans-serif vh-100">
-        <div class="mw9 center pa4 pt5-ns ph7-l">
-            <h4 class="f6 ttu tracked black-80"><small>Built With Love By</small></h4>
-            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-            <span class="bg-black-90 white lh-copy white pa1 tracked-tight">
-              Kellan and Noel
-            </span>
-            </h3>
-            <h4 class="f3 fw1 georgia i">Our stories.</h4>
-            <h5 class="f6 ttu tracked black-80">Oakland, CA</h5>
-        </div>
-    </div>
+    <script type="text/javascript">
+    $(".main").onepage_scroll({
+        dotstyle: "fillup",
+        sectionContainer: "section",
+        easing: "ease",
+        animationTime: 1000,
+        pagination: true,
+        updateURL: false,
+        beforeMove: function(index) {},
+        afterMove: function(index) {},
+        loop: false,
+        keyboard: true,
+        responsiveFallback: false,
+        direction: "vertical"
+    });
+    </script>
 </body>
-
 </html>
