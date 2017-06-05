@@ -1,0 +1,13 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KornerShop/site.git",
+  "author": "ycleptkellan <yclepkellan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1"
+  }
+}
