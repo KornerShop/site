@@ -7,10 +7,10 @@ const port = 3001
 app.use(helmet())
 app.use(compression())
 
-app.use('/static', express.static('./dist'))
+app.use(express.static(__dirname + '/assets'))
 
 app.get("/", (req, res) => {
-  res.sendFile( __dirname + '/index.html')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.listen(port, () => {
