@@ -1,3 +1,26 @@
 .f-headline-l {
-	font-size: 8em;
+    font-size: 8em;
+}
+/*parent*/
+.page2 {
+    background-image: url('../img/IMG_5224.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*child*/
+.background {
+	background: rgba(0,0,0,0.4);
+}
+
+.about {
+	border-radius: 75%
+}
+
+.meetus {
+	font-family: 'Lato', cursive;
+	font-size: 5em;
+}
+
+.kel, .noel {
+	font-family: 'Lato', cursive;
 }
