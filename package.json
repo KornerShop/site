@@ -5,6 +5,9 @@
   "repository": "https://github.com/KornerShop/site.git",
   "author": "ycleptkellan <yclepkellan@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "sudo forever start server.js >> /var/log/forever/forever.log"
+  },
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.15.3",
